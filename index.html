@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amirath Lube — Products</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="https://source.unsplash.com/120x40/?logo,oil" alt="Logo" class="logo" />
+    </div>
+
+    <nav class="header-nav" id="company-nav">
+      <!-- Nav items injected by JS -->
+    </nav>
+
+    <div class="header-right">
+      <a href="#contact" class="btn small">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cover -->
+    <section class="cover">
+      <div class="cover-overlay">
+        <h1>Premium Lubricants from 5 Trusted Brands</h1>
+        <p>High performance engine oils, gear oils and industrial lubricants — choose a brand to browse products.</p>
+        <div class="cover-actions">
+          <button id="see-highlights" class="btn">See Highlights</button>
+        </div>
+      </div>
+      <img src="https://source.unsplash.com/1600x700/?engine,oil" alt="Cover photo" class="cover-img" />
+    </section>
+
+    <!-- Products area -->
+    <section class="products-section">
+      <div class="container">
+        <h2 id="company-title">Select a brand</h2>
+        <div id="products-grid" class="grid">
+          <!-- Products injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights" class="highlights">
+      <div class="container">
+        <h2>Highlights — Selected products from all brands</h2>
+        <div id="highlights-grid" class="grid">
+          <!-- Highlights injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Contact Us</h3>
+          <p>Amirath Lube<br/>Dhaka, Bangladesh</p>
+          <p>Email: info@example.com<br/>Phone: +880 1X XXXX XXXX</p>
+        </div>
+        <div>
+          <h3>Send a message</h3>
+          <form id="contact-form">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <p id="contact-confirm" class="hidden small"></p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© <span id="year"></span> Amirath Lube — All rights reserved.</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
