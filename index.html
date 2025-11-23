@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Amirath Lube — Products</title>
+  <title>Lubricants Website</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="header-left">
-      <img src="https://source.unsplash.com/120x40/?logo,oil" alt="Logo" class="logo" />
+      <img src="image/logo.png" alt="Logo" class="logo" />
     </div>
 
     <nav class="header-nav" id="company-nav">
-      <!-- Nav items injected by JS -->
+      <div class="nav-item" id="home-btn">Home</div>
+      <!-- কোম্পানির nav item JS থেকে যোগ হবে -->
     </nav>
 
     <div class="header-right">
@@ -22,46 +25,43 @@
   </header>
 
   <main>
-    <!-- Cover -->
+
+    <!-- HERO / COVER SECTION -->
     <section class="cover">
+      <img src="image/hero1.jpg" class="cover-img" alt="Cover Image">
       <div class="cover-overlay">
-        <h1>Premium Lubricants from 5 Trusted Brands</h1>
-        <p>High performance engine oils, gear oils and industrial lubricants — choose a brand to browse products.</p>
-        <div class="cover-actions">
-          <button id="see-highlights" class="btn">See Highlights</button>
-        </div>
+        <h1>Premium Lubricants From Trusted Brands</h1>
+        <p>Select a brand to view products or explore our highlights.</p>
+        <button id="see-highlights" class="btn">See Highlights</button>
       </div>
-      <img src="https://source.unsplash.com/1600x700/?engine,oil" alt="Cover photo" class="cover-img" />
+      <!-- <img src="https://source.unsplash.com/1600x700/?engine,oil" alt="Cover photo" class="cover-img" /> -->
     </section>
 
-    <!-- Products area -->
+    <!-- PRODUCTS SECTION -->
     <section class="products-section">
       <div class="container">
         <h2 id="company-title">Select a brand</h2>
-        <div id="products-grid" class="grid">
-          <!-- Products injected by JS -->
-        </div>
+        <div id="products-grid" class="grid"></div>
       </div>
     </section>
 
-    <!-- Highlights -->
+    <!-- HIGHLIGHTS SECTION -->
     <section id="highlights" class="highlights">
       <div class="container">
-        <h2>Highlights — Selected products from all brands</h2>
-        <div id="highlights-grid" class="grid">
-          <!-- Highlights injected by JS -->
-        </div>
+        <h2>Highlights (Selected Products)</h2>
+        <div id="highlights-grid" class="grid"></div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- CONTACT SECTION -->
     <footer id="contact" class="site-footer">
       <div class="container footer-grid">
         <div>
           <h3>Contact Us</h3>
-          <p>Amirath Lube<br/>Dhaka, Bangladesh</p>
-          <p>Email: info@example.com<br/>Phone: +880 1X XXXX XXXX</p>
+          <p>Dhaka, Bangladesh</p>
+          <p>Email: marufcityoil@gmail.com<br>Phone: +880 1716 316726</p>
         </div>
+
         <div>
           <h3>Send a message</h3>
           <form id="contact-form">
@@ -73,10 +73,12 @@
           </form>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <small>© <span id="year"></span> Amirath Lube — All rights reserved.</small>
+        <small>© <span id="year"></span> All rights reserved @marufcityoil</small>
       </div>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
